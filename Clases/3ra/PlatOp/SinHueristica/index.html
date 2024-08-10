@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Sin Heurística</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bienvenido</h1>
+        <p>Mensaje de bienvenida sin mucha relevancia</p>
+    </div>
+
+    <div class="nav">
+        <a href="#home">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a href="#about">Acerca de</a>
+    </div>
+
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">User:</label> <!-- Un usuario podria no entender que le estoy pidiendo su nombre -->
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">TEXTO:</label> <!--Vease que no es una forma amable de pedir un mensaje-->
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <a href="#" class="cta">Enviar Mensaje</a>
+        </form>
+    </div>
+
+</body>
+</html>

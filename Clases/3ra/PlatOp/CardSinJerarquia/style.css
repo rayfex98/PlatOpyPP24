@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.product-title, .price, .description, .button {
+    font-size: 1em;
+    color: #000;
+    margin: 5px 0;
+}
+.button {
+    background-color: #ddd;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
