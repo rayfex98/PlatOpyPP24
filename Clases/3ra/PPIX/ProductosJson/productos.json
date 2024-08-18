@@ -1,0 +1,38 @@
+[
+    {
+      "nombre": "Producto 1",
+      "descripcion": "Descripción del Producto 1",
+      "precio": 100,
+      "stock": 20,
+      "imagen": "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw3f345006/products/ADIR9893/ADIR9893-1.JPG?sw=600&sh=600"
+    },
+    {
+      "nombre": "Producto 2",
+      "descripcion": "Descripción del Producto 2",
+      "precio": 200,
+      "stock": 15,
+      "imagen": "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb4b96a00/products/NIFN3108-410/NIFN3108-410-1.JPG?sw=600&sh=600"
+    },
+    {
+      "nombre": "Producto 3",
+      "descripcion": "Descripción del Producto 3",
+      "precio": 150,
+      "stock": 10,
+      "imagen": "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw76627b02/products/NIFB7854-893/NIFB7854-893-1.JPG?sw=600&sh=600"
+    },
+    {
+      "nombre": "Producto 4",
+      "descripcion": "Descripción del Producto 4",
+      "precio": 250,
+      "stock": 5,
+      "imagen": "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6eaa8084/products/PU623707-01/PU623707-01-1.JPG?sw=600&sh=600"
+    },
+    {
+      "nombre": "Producto 5",
+      "descripcion": "Descripción del Producto 5",
+      "precio": 300,
+      "stock": 8,
+      "imagen": "https://www.moov.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw4d096d6c/products/PU623707-12/PU623707-12-1.JPG?sw=600&sh=600"
+    }
+  ]
+  
