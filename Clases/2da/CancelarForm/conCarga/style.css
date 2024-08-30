@@ -23,7 +23,7 @@ body {
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    animation: spin 1s linear infinite; /*1seg es lo que tarda en completar la vuelta*/
+    animation: spin 0.5s linear infinite; /*1seg es lo que tarda en completar la vuelta*/
 }
 @keyframes spin {
     0% { transform: rotate(0deg); }
