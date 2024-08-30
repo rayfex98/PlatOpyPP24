@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Atributo Target</title>
+</head>
+<body>
+    <h1>Ejemplo de Uso del Atributo `target`</h1>
+    
+    <!-- Enlace que se abre en la misma ventana o pestaña -->
+    <p><a href="terminator.html" target="_self">Abrir en la misma ventana</a></p>
+    
+    <!-- Enlace que se abre en una nueva ventana o pestaña -->
+    <p><a href="terminator.html" target="_blank">Abrir en una nueva ventana</a></p>
+    
+    <!-- Enlace que se abre en el marco (frame) del nombre especificado -->
+    <p><a href="targetpadre.html" target="marco1">Abrir en un marco llamado marco1</a></p>
+    
+    
+    <!-- Definir un marco en la misma página para demostrar target="marco1" -->
+    <iframe name="marco1" width="800" height="800" style="border:1px solid black;">
+        Este es un marco para el enlace con target="marco1".
+    </iframe>
+</body>
+</html>

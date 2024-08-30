@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijo</title>
+</head>
+<body>
+    <h1>MARCO HIJO</h1>
+     <!-- Enlace que se abre en la misma ventana o pestaña -->
+     <p><a href="terminator.html" target="_self">Abrir en la misma ventana</a></p>
+    
+     <!-- Enlace que se abre en el marco (frame) del nombre especificado -->
+     <p><a href="terminator.html" target="marco3">Abrir en un marco llamado marco3</a></p>
+
+     <!-- Enlace que se abre en el mismo marco de la ventana actual -->
+     <p><a href="terminator.html" target="_parent">Abrir en el marco padre</a></p>
+        
+     <!-- Enlace que se abre en el marco superior -->
+     <p><a href="terminator.html" target="_top">Abrir en el marco superior</a></p>
+
+
+     <iframe name="marco3" width="400" height="400" style="border:1px solid black;">
+        Este es un marco para el enlace con target="marco3".
+    </iframe>
+</body>
+</html>
