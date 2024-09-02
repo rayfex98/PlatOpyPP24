@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: lightsalmon;"> <!--Ancho del html = Dispositivo-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Ancho del dispositivo es x pixeles-->
+    <title>Document</title>
+</head>
+<body style="width: 90%;background-color: aqua;"> <!--Ancho del body es 90% del dispositivo-->
+    <span>Body 90% del dispositivo</span>
+    <div id="Abuelo" style="width: 80%;background-color: lightgreen;"><!--Ancho del div es 80% del body-->
+        <span>Abuelo 80% del body</span>
+        <div id="Padre" style="width: 40%; background-color: blueviolet;"><!--Ancho del div es 40% del divPadre-->
+            <p>Padre 40% del abuelo</p>
+            <div id="Hijo" style="width: 50%; background-color: beige;">
+                <p>Hijo 50% del padre</p>
+            </div>
+            <div id="otroHijo" style="width: 50%; background-color: lightcoral;">
+                <p>otroHijo 50% del padre</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
