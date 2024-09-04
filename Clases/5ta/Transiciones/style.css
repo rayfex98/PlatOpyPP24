@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+}
+#cuadro {
+    display : none;
+    z-index: 100;
+    scale : 1;
+    transition: scale .5s ease;
+    @starting-style {
+        scale: 0;
+    }
+}
+.divs{
+    background-color: aquamarine;
+    margin: auto;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
