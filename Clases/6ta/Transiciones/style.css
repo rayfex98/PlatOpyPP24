@@ -5,7 +5,7 @@ body{
     display : none;
     z-index: 100;
     scale : 1;
-    transition: scale .5s ease;
+    transition: scale 10s ease;
     @starting-style {
         scale: 0;
     }
