@@ -1,17 +1,15 @@
-// Función para cargar los usuarios desde el archivo JSON
-function loadUsers() {
-    fetch('users.json')  // Hacemos la solicitud al archivo JSON
-        .then(response => response.json())  // Convertimos la respuesta en JSON
+function cargarAlumnos() {
+    fetch('users.json')
+        .then(response => response.json())
         .then(users => {
             const userList = document.getElementById('userList');
             userList.innerHTML = '';  // Limpiamos la lista antes de mostrar los usuarios
 
-            // Recorremos los usuarios y los añadimos a la lista
             users.forEach(user => {
                 const li = document.createElement('li');
                 li.textContent = user.name;
                 li.dataset.id = user.id;
-                li.addEventListener('click', () => showUserDetails(user));  // Agregamos el evento click para mostrar los detalles
+                li.addEventListener('click', () => mostrarDetalles(user));  // Agregamos el evento click para mostrar los detalles
                 userList.appendChild(li);
             });
         })
@@ -21,11 +19,10 @@ function loadUsers() {
 
 
 // Función para mostrar los detalles de un usuario
-function showUserDetails(user) {
+function mostrarDetalles(user) {
     document.querySelector('#userName span').textContent = user.name;
     document.querySelector('#userEmail span').textContent = user.email;
     document.querySelector('#userPhone span').textContent = user.phone;
 }
 
-// Agregamos el evento al botón para cargar los usuarios
-document.getElementById('loadUsersBtn').addEventListener('click', loadUsers);
+document.getElementById('cargarAlumnos').addEventListener('click', cargarAlumnos);
