@@ -1,9 +1,12 @@
+:root{
+    color-scheme: light dark;
+}
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: light-dark(#f4f4f9, #3f3f3f);
     margin: 0;
     padding: 1.5rem;
-    color: #333;
+    color: light-dark(#3f3f3f, #f4f4f9);
 }
 
 nav {
