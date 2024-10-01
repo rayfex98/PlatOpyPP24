@@ -5,9 +5,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Buenos Aires&appid=9035
     const { main, weather, name } = data;
     console.log(data);
     climaDiv.innerHTML = `
-      <h2>Clima en ${name}</h2>
+      <h2>Clima en ${name}</h2> 
       <p>Temperatura: ${main.temp} °C</p>
-      <p>Descripción: ${weather[0].description}</p>
+      <p>Tipo de clima: ${weather[0].description}</p>
       <p>Humedad: ${main.humidity}%</p>
       <p>Presión: ${main.pressure} hPa</p>
     `;
