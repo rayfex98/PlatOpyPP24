@@ -4,6 +4,10 @@ function cargaCiudad(event) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=903507f17d707fecd352d38301efba77&units=metric`)
     .then(response => response.json())
     .then(data => {
+      if(data.cod == 404){
+        document.getElementById('clima').innerHTML = `<h2>No se encontró la ciudad</h2>`;
+        return;
+      }
       const climaDiv = document.getElementById('clima');
       const { main, weather, wind, name } = data;
       console.log(data);
