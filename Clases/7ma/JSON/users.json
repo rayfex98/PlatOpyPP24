@@ -7,13 +7,13 @@
     },
     {
         "id": 2,
-        "name": "María López",
+        'name': { primerNombre: 'Facundo'},
         "email": "maria.lopez@google.com",
         "phone": "8765-4321"
     },
     {
         "id": 3,
-        "name": "Carlos García",
+        "name": "Hola",
         "email": "carlos.garcia@google.com",
         "phone": "5555-5555"
     },{
