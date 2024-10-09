@@ -1,9 +1,10 @@
 fetch('https://randomuser.me/api/')
   .then(response => response.json())
   .then(data => {
+    console.log(data);
     const user = data.results[0];
     const { email, cell, name, login, picture, location } = user;
-    console.log(data);
+    
     // Mostrar datos en el div
     const datosDiv = document.getElementById('datos');
     datosDiv.innerHTML = `
