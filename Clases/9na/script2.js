@@ -17,4 +17,4 @@ function enviarDatos(email, nombre, apellido, mensaje) {
     });
 }
 
-enviarDatos('prueba@pruebafacu.com', 'Facu', 'Romero', 'Hola curso, es una prueba.');
+enviarDatos('prueba@pruebafacu.com', 'Facu', 'Romero', 'Este es un nuevo mensaje, ya que necesitaba otra prueba');
