@@ -1,3 +1,4 @@
+/* https://magicloops.dev/es */
 function enviarMail(email, nombre, apellido, mensaje) {
     // Por si necesito usar letrs o simbolos raros
     const emailEncoded = encodeURIComponent(email);
@@ -17,10 +18,20 @@ function enviarMail(email, nombre, apellido, mensaje) {
         })
         .then(data => {
             console.log('Respuesta del servidor:', data); // Esperemos que sea un mensaje de ok y estatus 200 jaja
+            return true;
         })
         .catch(error => {
             console.error('Hubo un error:', error);
+            return 0;
         });
 }
-
-enviarMail('prueba@pruebafacu.com', 'Facu', 'Romero', 'Hola curso, es una prueba');
+function enviarCorreo(){
+    const email = document.getElementById("email").value;
+    const usuario = document.getElementById("nombreUsuario").value;
+    const apellido = document.getElementById("apellidoUsuario").value;
+    const mensaje = document.getElementById("mensajeUsuario").value;
+    console.log(email,usuario,apellido,mensaje);
+    enviarMail(email,usuario,apellido,mensaje);
+    return false;
+}
+/* enviarMail('prueba@pruebafacu.com', 'Facu', 'Romero', 'Hola curso, es una prueba'); */
