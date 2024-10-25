@@ -7,7 +7,8 @@ function enviarMail(email, nombre, apellido, mensaje) {
     const mensajeEncoded = encodeURIComponent(mensaje);
  //Ahora necesitamos la url de la api junto a los valores codificados
  //La api la cree en magicloops.dev y envia el mail a mi casilla personal.
-    const url = `https://magicloops.dev/api/loop/run/f30462a6-7678-4162-b3f4-a37119342e70?EMAIL=${emailEncoded}&Nombre=${nombreEncoded}&Apellido=${apellidoEncoded}&Mensaje=${mensajeEncoded}`;
+/* API endpoint para solicitar recetas en json, con las claves "titulo", "ingredientes", "tiempo de preparacion", "pasos a seguir" */
+ const url = `https://magicloops.dev/api/loop/run/9c7388e3-78a0-4739-bfc4-c1803eac52c1?email=${emailEncoded}&nombre=${nombreEncoded}&apellido=${apellidoEncoded}&mensaje=${mensajeEncoded}`;
 
     fetch(url)//Envia una peticion a la api
         .then(response => {
